@@ -2,8 +2,20 @@
 <html>
 <head>
 	<title>Coursera test</title>
+	<meta charset="utf-8">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
 </head>
-<body>
-<h1>Coursera Test</h1>
+<body ng-app="myFirstapp">
+<div ng-controller="Mycontroller">
+	<div>{{name}} has a message for you</div>
+	<div>
+		<button ng-click="feed()">feeding</button>
+		<br>
+		<img ng-src="images/walid_{{stateofbeing}}.png">
+	</div>
+	</div>
+	
+
 </body>
 </html>
